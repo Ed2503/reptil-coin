@@ -1,0 +1,258 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+html, body, #root {
+	height: 100%;
+	font-family: 'Arial';
+}
+a {
+	color: none;
+}
+a:active {
+	color: none;
+}
+a:link {
+	text-decoration: none;
+	color: none;
+}
+.ruteo {
+	min-width: 100%;
+	min-height: 100%;
+}
+#container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+}
+
+/*App header styles*/
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+	flex-direction: column;
+	background-color: #1a237e;
+	width: 100%;
+}
+.header-item-2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 50px;
+}
+.h-i-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	cursor: pointer;
+	transition: .2s;
+}
+.link {
+	padding: 10px 100px;
+}
+.h-i-2:hover {
+	background: #303f9f;
+}
+.h-i-2 h3 {
+	color: white;
+}
+
+/*App body styles*/
+
+.main {
+	/*border: solid red 1px;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main-child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	/*border: solid red 1px;*/
+}
+
+/* App home styles */
+
+.home {
+	min-height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.home-title {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-size: 46px;
+}
+.home-sub-title {
+	font-size: 26px;
+	padding-bottom: 30px;
+}
+.grid {
+	border: solid #303f9f 3px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 60px;
+	width: 900px;
+	flex-direction: column;
+}
+.grid-tab {
+	width: 100%;
+	height: 55px;
+	border-bottom: #303f9f solid 3px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.target {
+	width: 83%;
+	height: 35px;
+	margin: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: solid 1px #A9A9A9;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 10px;
+	transition: .1s;
+}
+.target:hover {
+	border: solid #303f9f 2px;
+	cursor: pointer;
+}
+.target:active {
+	transform: scale(0.99);
+}
+.target-item-rank {
+	height: 100%;
+	/*border: solid red 1px;*/
+	width: 50px;
+	margin-left: 6px;
+}
+.target-item-name {
+	height: 100%;
+	/*border: solid red 1px;*/
+	width: 180px;
+	margin-left: 75px;
+}
+.target-item-price {
+	height: 100%;
+	/*border: solid red 1px;*/
+	width: 140px;
+	position: relative;
+	left: 15px;
+}
+.target-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.target-link {
+	position: absolute;
+	width: 680px;
+	height: 35px;
+	/*border: solid red 1px;*/
+}
+
+/*App panel styles*/
+	
+	.panel {
+		display: flex;
+		flex-direction: column;
+		/*justify-content: center;*/
+		align-items: center;
+		width: 1000px;
+		height: 600px;
+		/*border: solid red 1px;*/
+	}
+	.panel h1 {
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.panel-item {
+		height: 40%;
+		width: 50%;
+		/*border: solid red 1px;*/
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.panel-i {
+		height: 50px;
+		width: 150px;
+		/*border: solid red 1px;*/
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.panel-i h3 {
+		margin-bottom: 5px;
+	}
+
+/*App footer styles*/
+
+.footer {
+	width: 100%;
+	height: 170px;
+	margin-top: 50px;
+	background-color: #303f9f;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.footer h1 {
+	color: white;
+	font-size: 42px;
+	margin-left: 80px;
+}
+.more {
+	width: 100%;
+	height: 45px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: #d6d6d6;
+	transition: .1s;
+}
+.more:hover {
+	color: #303f9f;
+}
+
+/* App creditos styles */
+
+.Creditos {
+	/*border: solid red 1px;*/
+	margin-top: 50px;
+	height:300px;
+	width: 1000px;
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+	flex-direction: column;
+	text-align: center;
+}
+.Creditos h1 {
+	margin-bottom: 60px;
+}
